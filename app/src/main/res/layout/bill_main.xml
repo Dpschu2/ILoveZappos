@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar2"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <GridView
+        android:id="@+id/listBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/toolbar2"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_items"
+        android:layout_above="@+id/info"
+        android:layout_marginTop="70dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info"
+        android:text="@string/bill"
+        android:layout_alignLeft="@+id/listBill"
+        android:textSize="25dp"
+        android:gravity="end"
+        android:paddingLeft="40dp"
+        android:layout_alignTop="@+id/quantity" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="185dp"
+        android:id="@+id/quantity"
+        android:text=""
+        android:textSize="25dp"
+        android:gravity="start"
+        android:layout_marginTop="410dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="185dp"
+        android:id="@+id/tax"
+        android:text=""
+        android:textSize="25dp"
+        android:gravity="start"
+        android:layout_marginTop="440dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="185dp"
+        android:text=""
+        android:id="@+id/total"
+        android:layout_marginBottom="14dp"
+        android:textSize="25dp"
+        android:gravity="start"
+        android:layout_marginTop="470dp"/>
+</RelativeLayout>
+</layout>
